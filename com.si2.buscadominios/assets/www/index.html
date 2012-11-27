@@ -1,0 +1,139 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SI2 Comprobador de dominios libres y más</title>
+    <meta name="description" content="">
+    <meta name="author" content="SI2 Pequeñas y Grandes Soluciones Tecnológicas S.L. - www.si2.info">
+    <!-- Mobile viewport optimization http://goo.gl/b9SaQ -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- For iPhone 4 with high-resolution Retina display: -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/icon@2x.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/icon.png">
+    <link rel="apple-touch-startup-image" href="assets/images/default.png">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="./lungo.js/lungo-1.2.css">
+    <link rel="stylesheet" href="./lungo.js/lungo.theme.default.css">
+	<!-- Sugar Growl -->
+    <link rel="stylesheet" href="./lungo.js/sugar/Growl/lungo.sugar.growl.css">
+	
+
+</head>
+
+<body class="app" style="background-color: #EDEDED;">
+
+    <section id="principal">
+        <header data-title="" class="orange">
+<!--            <a href="#aside-si2" data-target="aside" data-icon="items" class="button onleft"></a> -->
+			<nav>
+				<a href="#pagina_buscar" data-target="article" data-icon="search" data-label="Buscar" data-title="" class="current"></a>
+				<a href="#sobre_aplicacion" data-target="article" data-icon="file" data-label="+ info" data-title=""></a>
+				<a href="#sobre_si2" data-target="article" data-icon="info" data-label="Sobre SI2" data-title=""></a>	
+			
+			</nav>
+
+        </header>
+
+		
+<!--
+    <aside id="aside-si2" class="scrollable">
+    	<div class="title">Selecciona</div>
+		<a href="#pagina_buscar" data-target="article" data-icon="search">Buscar</a>
+		<a href="#sobre_aplicacion" data-target="article" data-icon="wifi" data-title="Más información">Más información</a>
+		<a href="#sobre_si2" data-target="article" data-icon="info" data-title="Sobre SI2">Sobre SI2</a>	
+	</aside>
+-->			
+
+        <article id="pagina_buscar" class="indented list scrollable">
+        
+        		<div class="onright"><img src="assets/images/logo_si2.png" height="30"></div>
+				<h1 class="title">Buscar dominio</h1>		
+				<ul>
+                    <li id="buscar" data-search="escribe el dominio que buscas"></li>
+                    <li>
+                        <div class="title">Búsqueda de dominios libres</div>
+                        <div style="display: block; overflow: hidden;  text-overflow: ellipsis; font-size: 0.85em; color: #888888">   
+                     
+						<p>Puedes introducir el nombre con la extensión preferida o sin ella, la búsqueda devolverá varias opciones. No es necesario introducir "www" (por ejemplo, google.com en lugar de www.google.com)</p>
+						</div>
+						
+                    </li>
+				</ul>
+				
+				<ul id="dominios_container">	
+                </ul>
+	
+		</article>
+     
+		<article id="sobre_aplicacion" class="indented list scrollable">
+		
+                <h1 class="title" data-icon="">Sobre esta aplicación</h1>
+                <p>La creatividad aparece cuando le da la gana, y en SI2 intentamos echarle una mano.</p>
+				
+				<p>
+				Pensamos que puedes tener una buena idea de negocio en cualquier momento, ¿por qué no comprobar de una forma muy ágil si el nombre de dominio más adecuado está disponible?
+				</p>
+
+                <p>
+				El uso de este servicio no compromete a reservar el nombre de dominio ni alojamiento con SI2, aunque por supuesto damos ese servicio (es tu decisión).
+				</p>
+				
+				<p>
+				<em>Por las características del servicio Whois, no podemos garantizar que los resultados que muestra la aplicación sean 100% fiables, ponte en contacto con nosotros para mayor seguridad.</em>
+				</p>
+			
+        </article>		
+		
+		<article id="sobre_si2" class="indented list scrollable" style="text-align:center;">
+		
+                <h1 class="title" data-icon="">SI2 Pequeñas y Grandes Soluciones Tecnológicas S.L.</h1>
+				<p>En SI2 nos encanta la tecnología, y pretendemos situarnos cerca del empresario para acompañarlo en sus decisiones. A veces nos encargamos de hacer todo el trabajo, en otras ocasiones solo lo asesoramos en cuanto a productos, tecnologías, etc. ¡Se trata de hacer las cosas bien!</p>
+<!--				
+				<h2>Experiencia</h2>
+				<p>Nos avalan más de 10 años de experiencia real desarrollando proyectos tecnológicos.</p>
+-->
+				<h2>Personas</h2>
+				<p>Trabajamos en entornos virtuales, pero hablamos cara a cara con nuestros clientes.</p>
+				
+                <p>
+                <img src="assets/images/logo_si2.png">
+				</p>
+				<p>
+				<a href="http://si2.info" class="button big orange">¡Visítanos en www.si2.info!</a>
+				</p>
+        </article>	
+
+
+    </section>
+
+
+
+
+
+
+    <!-- LungoJS (Production mode) -->
+    <script src="lungo.js/lungo-1.2.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script src="app/app.js"></script>
+    <script src="app/data.js"></script>
+    <script src="app/events.js"></script>
+    <script src="app/services.js"></script>
+    <script src="app/view.js"></script>
+    <!-- Sugar -->
+    <script src="lungo.js/sugar/Growl/lungo.sugar.growl.js"></script>
+
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	<script type="text/javascript" charset="utf-8" src="jquery-1.8.0.min.js"></script>
+
+<script type="text/javascript">
+    $('#buscar input').focus();
+</script>
+
+</body>
+</html>
